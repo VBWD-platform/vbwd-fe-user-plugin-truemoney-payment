@@ -1,0 +1,21 @@
+{
+  "truemoney": {
+    "payment": {
+      "creating": "Generating TrueMoney QR…",
+      "scan": "Scan with the TrueMoney app to pay",
+      "openApp": "Open TrueMoney app",
+      "expires": "Expires",
+      "retry": "Try again"
+    },
+    "success": {
+      "title": "Payment received",
+      "message": "Your TrueMoney payment has been confirmed.",
+      "dashboard": "Back to dashboard"
+    },
+    "cancel": {
+      "title": "Payment cancelled or expired",
+      "message": "The TrueMoney payment was not completed — no charge was made.",
+      "retry": "Try again"
+    }
+  }
+}

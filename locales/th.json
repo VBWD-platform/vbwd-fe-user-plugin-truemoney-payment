@@ -1,0 +1,21 @@
+{
+  "truemoney": {
+    "payment": {
+      "creating": "กำลังสร้าง QR TrueMoney…",
+      "scan": "สแกนด้วยแอป TrueMoney เพื่อชำระเงิน",
+      "openApp": "เปิดแอป TrueMoney",
+      "expires": "หมดอายุ",
+      "retry": "ลองอีกครั้ง"
+    },
+    "success": {
+      "title": "ชำระเงินสำเร็จ",
+      "message": "ยืนยันการชำระเงิน TrueMoney ของคุณแล้ว",
+      "dashboard": "กลับไปที่แดชบอร์ด"
+    },
+    "cancel": {
+      "title": "การชำระเงินถูกยกเลิกหรือหมดอายุ",
+      "message": "การชำระเงิน TrueMoney ไม่สำเร็จ — ยังไม่มีการเรียกเก็บเงิน",
+      "retry": "ลองอีกครั้ง"
+    }
+  }
+}

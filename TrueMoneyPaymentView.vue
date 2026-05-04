@@ -1,20 +1,36 @@
 <template>
   <div class="truemoney-payment">
-    <div v-if="loading" class="truemoney-payment__loading">
+    <div
+      v-if="loading"
+      class="truemoney-payment__loading"
+    >
       <p>{{ $t('truemoney.payment.creating') }}</p>
     </div>
 
-    <div v-else-if="error" class="truemoney-payment__error">
+    <div
+      v-else-if="error"
+      class="truemoney-payment__error"
+    >
       <p>{{ error }}</p>
-      <button class="btn btn-primary" @click="startPayment">
+      <button
+        class="btn btn-primary"
+        @click="startPayment"
+      >
         {{ $t('truemoney.payment.retry') }}
       </button>
     </div>
 
-    <div v-else-if="transaction" class="truemoney-payment__qr">
+    <div
+      v-else-if="transaction"
+      class="truemoney-payment__qr"
+    >
       <p>{{ $t('truemoney.payment.scan') }}</p>
-      <div class="qr-placeholder">{{ transaction.qr_payload }}</div>
-      <p class="expiry">{{ $t('truemoney.payment.expires') }}: {{ formatExpiry(transaction.expires_at) }}</p>
+      <div class="qr-placeholder">
+        {{ transaction.qr_payload }}
+      </div>
+      <p class="expiry">
+        {{ $t('truemoney.payment.expires') }}: {{ formatExpiry(transaction.expires_at) }}
+      </p>
       <a
         v-if="transaction.deep_link"
         class="btn btn-secondary"
@@ -22,7 +38,12 @@
       >
         {{ $t('truemoney.payment.openApp') }}
       </a>
-      <p v-if="pollStatus" class="poll-status">{{ pollStatus }}</p>
+      <p
+        v-if="pollStatus"
+        class="poll-status"
+      >
+        {{ pollStatus }}
+      </p>
     </div>
   </div>
 </template>

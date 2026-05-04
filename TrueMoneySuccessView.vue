@@ -2,7 +2,10 @@
   <div class="truemoney-success">
     <h2>{{ $t('truemoney.success.title') }}</h2>
     <p>{{ $t('truemoney.success.message') }}</p>
-    <router-link class="btn btn-primary" to="/dashboard">
+    <router-link
+      class="btn btn-primary"
+      to="/dashboard"
+    >
       {{ $t('truemoney.success.dashboard') }}
     </router-link>
   </div>

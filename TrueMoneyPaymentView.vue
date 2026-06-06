@@ -77,7 +77,7 @@ async function startPayment() {
   loading.value = true;
   error.value = null;
   try {
-    const resp = await api.post('/api/v1/plugins/truemoney/transactions', {
+    const resp = await api.post<Response>('/api/v1/plugins/truemoney/transactions', {
       invoice_no: invoiceNo,
       amount: route.query.amount,
     });
@@ -92,7 +92,7 @@ async function startPayment() {
 
 function startPolling(invoiceNo: string) {
   pollTimer = setInterval(async () => {
-    const resp = await api.get(
+    const resp = await api.get<Response>(
       `/api/v1/plugins/truemoney/transactions/${invoiceNo}/status`,
     );
     const body = await resp.json();

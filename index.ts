@@ -4,7 +4,7 @@ import th from './locales/th.json';
 
 export const trueMoneyPaymentPlugin: IPlugin = {
   name: 'truemoney-payment',
-  version: '1.0.0',
+  version: '26.6',
   description: 'TrueMoney Wallet (Thailand) payment — QR + deep-link',
   _active: false,
 
